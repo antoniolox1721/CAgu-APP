@@ -1,7 +1,16 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 
 function ReflectionQuiz({ questions }) {
   const [answers, setAnswers] = useState({})
+
+  const score = useMemo(
+    () =>
+      Object.entries(answers).reduce(
+        (total, [qIndex, answer]) => (questions[Number(qIndex)].correct === answer ? total + 1 : total),
+        0,
+      ),
+    [answers, questions],
+  )
 
   return (
     <div className="quiz-wrap">
@@ -32,6 +41,17 @@ function ReflectionQuiz({ questions }) {
           </article>
         )
       })}
+
+      <div className="quiz-score">
+        <strong>
+          Pontuação atual: {score}/{questions.length}
+        </strong>
+        <p>
+          {score === questions.length
+            ? 'Excelente: percebeste como saneamento e água estão ligados a saúde, dignidade e sustentabilidade.'
+            : 'Continua: cada resposta é uma oportunidade para olhar além do que desaparece da vista.'}
+        </p>
+      </div>
     </div>
   )
 }
