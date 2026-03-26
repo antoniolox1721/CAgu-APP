@@ -170,8 +170,8 @@ export const timelineSteps = [
 export const quizQuestions = [
   {
     question: 'A água da descarga desaparece?',
-    options: ['Sim, sai do sistema.', 'Não, continua no ciclo hídrico.', 'Só desaparece se for pouca quantidade.'],
-    correct: 1,
+    options: ['Não, continua no ciclo hídrico.', 'Só desaparece se for pouca quantidade.', 'Sim, sai do sistema.'],
+    correct: 0,
     insight:
       'A água muda de percurso: passa por redes, tratamento e reentrada no ambiente. O impacto continua para além do que vemos.',
   },
@@ -179,17 +179,47 @@ export const quizQuestions = [
     question: 'Porque é que saneamento é também tema de dignidade?',
     options: [
       'Porque melhora apenas o conforto estético.',
-      'Porque garante privacidade, segurança e saúde.',
       'Porque serve apenas para poupar dinheiro.',
+      'Porque garante privacidade, segurança e saúde.',
     ],
-    correct: 1,
+    correct: 2,
     insight: 'Acesso seguro ao saneamento reduz exposição a violência, doença e exclusão social.',
   },
   {
-    question: 'O que é mais eficaz para aquíferos?',
-    options: ['Remediar depois de contaminar.', 'Prevenir infiltrações e tratar bem os efluentes.', 'Ignorar, porque está no subsolo.'],
-    correct: 1,
+    question: 'O que é mais eficaz para proteger aquíferos?',
+    options: ['Remediar depois de contaminar.', 'Ignorar, porque está no subsolo.', 'Prevenir infiltrações e tratar bem os efluentes.'],
+    correct: 2,
     insight: 'A prevenção é mais rápida, barata e eficaz do que recuperar águas subterrâneas já contaminadas.',
+  },
+  {
+    question: 'Uma ETAR eficiente serve para…',
+    options: [
+      'Reduzir contaminantes antes da água voltar ao meio natural.',
+      'Esconder o problema longe da cidade.',
+      'Aumentar o consumo doméstico de água.',
+    ],
+    correct: 0,
+    insight: 'Tratamento adequado reduz risco sanitário e pressão ambiental em rios e zonas costeiras.',
+  },
+  {
+    question: 'Qual é a melhor leitura sobre o autoclismo?',
+    options: [
+      'Quanto mais litros por descarga, melhor para o ambiente.',
+      'Ajustar volume e eficiência pode poupar milhares de litros por ano.',
+      'Não há diferença real entre sistemas eficientes e antigos.',
+    ],
+    correct: 1,
+    insight: 'Pequenas escolhas técnicas, repetidas diariamente, mudam de forma significativa o consumo anual.',
+  },
+  {
+    question: 'Sem saneamento seguro, o impacto social tende a…',
+    options: [
+      'Diminuir faltas escolares e riscos de saúde.',
+      'Aumentar vulnerabilidade, doença e desigualdade.',
+      'Ficar apenas na esfera ambiental, sem efeito humano.',
+    ],
+    correct: 1,
+    insight: 'Saneamento é infraestrutura de justiça social: influencia saúde, educação, segurança e rendimento.',
   },
 ]
 

@@ -10,6 +10,21 @@ const particles = [
 ]
 
 function Hero({ highlights }) {
+  const scrollToSection = (event, sectionId) => {
+    event.preventDefault()
+
+    const section = document.getElementById(sectionId)
+    if (!section) return
+
+    const rect = section.getBoundingClientRect()
+    const targetY = rect.top + window.scrollY - window.innerHeight / 2 + rect.height / 2
+
+    window.scrollTo({
+      top: Math.max(targetY, 0),
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <section className="hero" id="topo">
       <div className="hero-particles" aria-hidden="true">
@@ -41,10 +56,10 @@ function Hero({ highlights }) {
         </p>
 
         <div className="hero-cta-group">
-          <a className="cta-btn" href="#destino">
+          <a className="cta-btn" href="#destino" onClick={(event) => scrollToSection(event, 'destino')}>
             Ver o percurso da água
           </a>
-          <a className="cta-btn ghost" href="#simulador">
+          <a className="cta-btn ghost" href="#simulador" onClick={(event) => scrollToSection(event, 'simulador')}>
             Simular consumo
           </a>
         </div>
