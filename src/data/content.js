@@ -96,7 +96,7 @@ export const invisibleScenarios = [
 export const dignityCards = [
   {
     title: 'Saúde e prevenção',
-    teaser: 'Uma sanita segura pode travar cadeias de doença.',
+    teaser: 'Uma sanita segura pode prevenir a propagação de doenças.',
     detail:
       'Reduz contacto com agentes patogénicos, protege água de consumo e alivia pressão sobre serviços de saúde. Prevenção começa em infraestruturas básicas bem geridas.',
   },
