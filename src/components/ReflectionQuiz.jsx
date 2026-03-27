@@ -35,7 +35,7 @@ function ReflectionQuiz({ questions }) {
             </div>
             {hasAnswer && (
               <p className={isCorrect ? 'quiz-feedback ok' : 'quiz-feedback warn'}>
-                {isCorrect ? 'Boa leitura da realidade.' : 'Vale rever esta ideia.'} {item.insight}
+                {isCorrect ? 'Boa leitura da realidade.' : 'Vale a pena rever esta ideia.'} {item.insight}
               </p>
             )}
           </article>
@@ -48,7 +48,7 @@ function ReflectionQuiz({ questions }) {
         </strong>
         <p>
           {score === questions.length
-            ? 'Excelente: percebeste como saneamento e água estão ligados a saúde, dignidade e sustentabilidade.'
+            ? 'Excelente: percebeste como o saneamento e a água estão ligados à saúde, dignidade e sustentabilidade.'
             : 'Continua: cada resposta é uma oportunidade para olhar além do que desaparece da vista.'}
         </p>
       </div>
