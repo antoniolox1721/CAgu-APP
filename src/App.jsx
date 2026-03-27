@@ -62,7 +62,7 @@ function App() {
         <Section
           id="invisivel"
           title="Água invisível, impacto real"
-          subtitle="O que não se vê pode custar caro: em dinheiro, em ecossistemas e em saúde."
+          subtitle="O que não se vê pode ser prejudicial: em dinheiro, em ecossistemas e em saúde."
         >
           <InvisibleWater scenarios={invisibleScenarios} />
         </Section>
@@ -79,7 +79,7 @@ function App() {
         <Section
           id="dignidade"
           title="Saneamento é dignidade, segurança e futuro"
-          subtitle="Uma sanita pode ser proteção concreta para saúde, escola, trabalho e autonomia."
+          subtitle="Uma sanita pode ser a proteção para a saúde, a escola, o trabalho e a autonomia."
         >
           <ExpandableCards items={dignityCards} />
         </Section>
